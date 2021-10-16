@@ -12,17 +12,6 @@ class Book{
         this.read = true
         this.readDate = new Date(Date.now())
     }
-
-    // get read(){
-    //     return this.read
-    // }
-
-    // set read(read){
-    //     this.read = read
-    // }
-
-
-
 }
 
 class BookList{
@@ -44,7 +33,6 @@ class BookList{
         return this.booklist[this.indexCurrentBook - 1]
     }
     
-
     addBook(book){
         this.booklist = [...this.booklist, book]
 
@@ -58,7 +46,6 @@ class BookList{
         this.numberBookRead += 1
         this.indexCurrentBook =+ 1
     }
-
 }
 
 const book1 = new Book("Teste", "terror", "Murilo")
